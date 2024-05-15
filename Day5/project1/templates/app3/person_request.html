@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+<head>
+    <title>PERSONREQUEST</title>
+</head>
+<body>
+    <form method="post" class="text-center">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Accept/Sumbmit>" class="btn btn-success">
+    </form>
+    
+</body>
+</html>
